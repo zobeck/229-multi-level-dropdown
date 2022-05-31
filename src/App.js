@@ -14,7 +14,7 @@ import { CSSTransition } from 'react-transition-group';
 function App() {
   return (
     <Navbar>
-      <NavItem icon={<PlusIcon />} />
+      <div className='nav-item'>Item 1</div>
       <NavItem icon={<BellIcon />} />
       <NavItem icon={<MessengerIcon />} />
 
