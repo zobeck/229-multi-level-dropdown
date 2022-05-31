@@ -11,10 +11,19 @@ import { ReactComponent as BoltIcon } from './icons/bolt.svg';
 import React, { useState, useEffect, useRef } from 'react';
 import { CSSTransition } from 'react-transition-group';
 
+
+const NavbarInicio = () => {
+  const [clicked, setClicked] = useState(false)
+  const handleClick = () => {
+    //cuando esta true lo pasa a false y vice versa
+    setClicked(!clicked)
+  }
+
 function App() {
   return (
     <Navbar>
       <div className='nav-item'>Item 1</div>
+      <a className="nav-item" onClick={handleClick} href="/talento">Postulante</a>
       <NavItem icon={<BellIcon />} />
       <NavItem icon={<MessengerIcon />} />
 
